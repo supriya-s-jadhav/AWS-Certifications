@@ -6,7 +6,7 @@
 
 ## 1. Create an AWS Account
 
-Any new AWS account includes 12-months of free tier access. [Create a free account on AWS here](https://aws.amazon.com/free/ ). 
+Any new AWS account includes 12-months of free tier access. [Create a free account on AWS here](https://aws.amazon.com/free/ ).
 
 ## 2. Setting up a billing alarm
 
@@ -101,3 +101,12 @@ To set-up MFA with your AWS account, select account name->'My Security Credentia
 6. Click 'Assign MFA'.
 
 To verify that you have successfully assigned MFA to your account, sign out from your account and sign-in again. The sign-in console will ask for email id, password and one time generated code. Enter all the credentials and it will take you to the AWS home screen. It means you have successfully added MFA to the root user account.
+
+
+Links from official site:
+
+1. [AWS Free Trial](https://aws.amazon.com/free/start-your-free-trial/)
+2. [Create and Active a new Amazon Wed Service account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
+3. [Create a billing alert to monitor your estimated AWS charges](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html)
+4. [Using MFA in AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)
+5. [Enabling MFA devices](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable.html)
