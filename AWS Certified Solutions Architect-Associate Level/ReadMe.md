@@ -5,10 +5,15 @@ Details and list of AWS Certified Solutions Architect Associate Exam guide. Note
 ## About Exam:
 
 Length: 130 min
+
 Number of Questions: 65
+
 Format: Multiple choice
+
 Cost: $150
+
 Register for the exam: (Link to exam registration page)[https://www.aws.training/certification?src=arc-assoc]
+
 Results: Provided immediately after completing the exam
 
 ## Exam Topics:
@@ -26,4 +31,4 @@ Results: Provided immediately after completing the exam
 
 ## List of AWS CSAA gist:
 
-1. [Setting up new AWS account, Billing Widget and security essentials](https://github.com/sampat21/AWS-Certifications/blob/master/AWS%20Certified%20Solutions%20Architect-Associate%20Level/AccountSetup.md)
+1. [Setting up a new AWS account, Billing Widget and security essentials](https://github.com/sampat21/AWS-Certifications/blob/master/AWS%20Certified%20Solutions%20Architect-Associate%20Level/AccountSetup.md)
