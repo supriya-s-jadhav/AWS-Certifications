@@ -1,6 +1,6 @@
 # AWS Certified Solutions Architect-Associate Level Exam Preparation Guide
 
-Details and list of AWS Certified Solutions Architect Associate Exam guide.
+Details and list of AWS Certified Solutions Architect Associate Exam guide. Note that AWS CSAA abbreviation will be used for 'AWS Certified Solutions Architect Associate'.
 
 ## About Exam:
 
@@ -24,3 +24,6 @@ Results: Provided immediately after completing the exam
 
 5. Define Operationally Excellent Architecture             6%
 
+## List of AWS CSAA gist:
+
+1. [Setting up new AWS account, Billing Widget and security essentials] (https://github.com/sampat21/AWS-Certifications/blob/master/AWS%20Certified%20Solutions%20Architect-Associate%20Level/AccountSetup.md)
