@@ -5,6 +5,7 @@
 
 The security and compliance of AWS platform is partially managed by AWS, and some parts are the customer's responsibility.
 
+![Shared Responsibility Model](sharedResponsibility.jpg)
 
 #### 1. AWS responsibility
 
