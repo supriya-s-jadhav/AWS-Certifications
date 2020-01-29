@@ -1,0 +1,14 @@
+# General Architecture Fundamentals
+
+
+## Shared Responsibility/Security Model
+
+The security and compliance of AWS platform is partially managed by AWS, and some parts are the customer's responsibility.
+
+
+
+#### AWS responsibility "Security of the cloud"
+#### Customer Responsibility "Security in the cloud"
+
+Links to AWS official site:
+1. [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/)

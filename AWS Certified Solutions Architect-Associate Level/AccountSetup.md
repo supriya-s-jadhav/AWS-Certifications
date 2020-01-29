@@ -103,7 +103,7 @@ To set-up MFA with your AWS account, select account name->'My Security Credentia
 To verify that you have successfully assigned MFA to your account, sign out from your account and sign-in again. The sign-in console will ask for email id, password and one time generated code. Enter all the credentials and it will take you to the AWS home screen. It means you have successfully added MFA to the root user account.
 
 
-Links from official site:
+Links to AWS official site:
 
 1. [AWS Free Trial](https://aws.amazon.com/free/start-your-free-trial/)
 2. [Create and Active a new Amazon Wed Service account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
