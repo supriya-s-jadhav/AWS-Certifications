@@ -5,10 +5,12 @@
 
 The security and compliance of AWS platform is partially managed by AWS, and some parts are the customer's responsibility.
 
-![Shared Responsibility Model](https://github.com/sampat21/AWS-Certifications/blob/master/AWS%20Certified%20Solutions%20Architect-Associate%20Level/fig1.png)
+![Shared Responsibility Model](fig1.png)
+
+hi
 
 #### AWS responsibility "Security of the cloud"
 #### Customer Responsibility "Security in the cloud"
 
 Links to AWS official site:
-1. [Shared Responsibility Model](https://github.com/sampat21/AWS-Certifications/blob/master/AWS%20Certified%20Solutions%20Architect-Associate%20Level/fig1.png)
+1. [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/)
