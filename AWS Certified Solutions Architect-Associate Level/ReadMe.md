@@ -12,7 +12,7 @@ Format: Multiple choice
 
 Cost: $150
 
-Register for the exam: (Link to exam registration page)[https://www.aws.training/certification?src=arc-assoc]
+Register for the exam: [Link to exam registration page](https://www.aws.training/certification?src=arc-assoc)
 
 Results: Provided immediately after completing the exam
 
