@@ -1,7 +1,7 @@
 # General Architecture Fundamentals
 
 
-## Shared Responsibility/Security Model
+## 1.Shared Responsibility/Security Model
 
 The security and compliance of AWS platform is partially managed by AWS, and some parts are the customer's responsibility.
 
@@ -25,5 +25,11 @@ Configuration Management – AWS maintains the configuration of its infrastructu
 
 Awareness & Training - AWS trains AWS employees, but a customer must train their own employees.
 
+## 2.Types of clouds
+
+The three main cloud com
+
+
 Links to AWS official site:
 1. [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/)
+2. [Types of Clouds](https://aws.amazon.com/types-of-cloud-computing/)
