@@ -28,3 +28,8 @@ An Availability zone is one or more discrete data centers with redundant power, 
 ## 3. Data Centers
 
 Inside an Availability zone is/are one or more Data Centers, which contain the physical servers that run AWS resources.
+
+## 4. Edge Locations
+
+Edge location are the endpoints for AWS which are used for caching content. It is used by CloudFront, Amazon's content delivery service to cache the content for faster delivery to users at any location.
+
