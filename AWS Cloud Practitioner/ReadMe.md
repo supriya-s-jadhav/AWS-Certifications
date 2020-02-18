@@ -1,50 +1,41 @@
 # AWS Cloud Practitioner
 
-AWS cloud practitioner exam is intended for absolute beginner.
+AWS Certified Cloud Practitioner (AWS CCP) exam overview and preparation guide. Useful links from AWS site are added. This can be considered as a good starting point to prepare for the exam.
 
-## About Exam:
+# Folder Structure
 
-Length: 90 min
+```
+AWS Cloud Practitioner
+|
+|___ 1.Cloud Concepts
+|   |___ AWS Global Infrastructure
+|   |___ Cloud Concepts
+|   |___ Demystifying the Cloud
+|   |___ Support Plans
+|
+|___ 2.Security
+|   |___
+|
+|___ 3.Technology
+|   |___ IAM
+|
+|___ 4.Billing and Pricing
+|
+|___ Exam Guide
+|   |___ AWS_Certified_Cloud_Practitioner_Exam_Guide.pdf
+|   |___ ExamGuideDetailed
+|
+|___ Sample Exam Questions
+|   |___ AWS-Certified-Cloud-Practitioner_Sample_Questions.pdf
+|
+|___ White Papers
+|   |___ AWS CCP Exam Overview
+|
+|- AWS CCP Exam Overview file
+```
 
-Number of Questions: 65
+## Folder Details
 
-Exam Time: 90 min
-
-Minimum Passing Score: 700/1000
-
-Cost: $100
-
-Format: Multiple choice, multiple answer
-
-Register for the exam: [Link to exam registration page](https://www.aws.training/certification?src=arc-assoc)
-
-Results: Provided immediately after completing the exam
-
-
-## Exam Topics:
-
-
-1. Cloud Concepts                     26%
-
-2. Security                           25%
-
-3. Technology                         33%
-
-4. Billing and Pricing                16%
-
-
-# Useful links from AWS site:
-
-[AWS Certified Cloud Practitioner Exam Guide](chrome-extension://gphandlahdpffmccakmbngmbjnjiiahp/https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS_Certified_Cloud_Practitioner_Exam_Guide_v2.1.pdf)
-
-[AWS Certified Cloud Practitioner Exam Sample Question paper](chrome-extension://gphandlahdpffmccakmbngmbjnjiiahp/https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practioner_Sample_Questions_v1.1_FINAL.PDF)
-
-[AWS White papers and guides](https://aws.amazon.com/whitepapers/?whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc)
-
-[White Paper: Overview of Amazon Web Services](chrome-extension://gphandlahdpffmccakmbngmbjnjiiahp/https://d0.awsstatic.com/whitepapers/aws-overview.pdf)
-
-[White Paper: Architecting for the cloud](chrome-extension://gphandlahdpffmccakmbngmbjnjiiahp/https://d1.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf)
-
-[White Paper: How AWS pricing works](chrome-extension://gphandlahdpffmccakmbngmbjnjiiahp/http://d1.awsstatic.com/whitepapers/aws_pricing_overview.pdf)
-
-(A copy of AWS certified cloud practitioner exam guide, sample questions, and white papers can be found in the Exam Guide, Sample Exam Questions, White Papers folder respectively)
+|Cloud Concepts| |
+|:----:|:---|
+|||
