@@ -4,7 +4,7 @@ AWS-Certifications is the collection of my personal notes, references for prepar
 
 ## Audiences
 
-The AWS-Certification repository is still under-development. I keep adding notes as my journey to difference certification progresses.
+The AWS-Certification repository is still under-development. I keep adding notes as my journey to different certification progresses.
 
 IF you are beginner to cloud technology or IT with zero experience to less experience, this can be your guide to build a foundational knowledge. There are lot of other resources available to get hands-on experience. Best way to start with hands-on experience is by opening a basic account on AWS, which is free for initial-12 months.
 
