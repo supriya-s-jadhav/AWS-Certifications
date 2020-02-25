@@ -1,5 +1,7 @@
 # RHCSA
 
+## In to do list
+
 Red Hat Certified Systems Administrator (EX200) Exam preparation guide
 
 ## Exam Topics:
@@ -19,3 +21,5 @@ Red Hat Certified Systems Administrator (EX200) Exam preparation guide
 7. Manage users and groups
 
 8. Manage security
+
+
