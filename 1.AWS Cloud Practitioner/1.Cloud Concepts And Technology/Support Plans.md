@@ -1,5 +1,7 @@
 # Support Plans
 
+<b>Key: Understanding and knowing difference between different support plans.</b>
+
 AWS support offers  selection of plans to meet user's needs. Below are the list of support plans offered by AWS:
 
 | Plan | Use case | Description | Price |
