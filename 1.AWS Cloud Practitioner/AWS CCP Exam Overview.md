@@ -4,11 +4,9 @@ AWS Certified Cloud Practitioner exam is foundational level certification. It is
 
 ## About Exam:
 
-Length: 90 min
+Exam Time: 90 min
 
 Number of Questions: 65
-
-Exam Time: 90 min
 
 Minimum Passing Score: 700/1000
 
