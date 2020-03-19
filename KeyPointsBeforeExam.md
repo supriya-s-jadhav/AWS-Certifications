@@ -1,5 +1,7 @@
 # Key Points to Revise Before Exam:
 
+There are only 3 AWS services that are global: IAM, S3 and DNS.
+
 ## Support Plans
 
 Be able to identify which support plan is best based on the given test cases.
@@ -22,7 +24,7 @@ When to make use of IAM (Identity Access Management) Users, Groups, Roles and Po
 
 * S3 is Object-based meaning allows you to upload files (0 bytes to 5TB).
 * The storage is unlimited and Files are stored in Buckets.
-* S3 os universal namespace. eg: http://s3-region_name.amazonaws.com/bucket_name
+* S3 os universal namespace. eg: http://bucket_name.s3.amazonaws.com/filename
 * S3 is a key(file name) and value(data) type.
 * It has Read after Write consistency for PUTS of new objects.
 * Eventual consistency for overwrite PUTS and DELETES.
