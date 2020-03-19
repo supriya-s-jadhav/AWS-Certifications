@@ -1,0 +1,32 @@
+# CloudFront
+
+CloudFront is Amazon's content delivery network (CDN), it is a system of distributed servers (network) that deliver webpages and other web content to a user based on the geographic locations of the user, the origin of the webpage, and a content delivery server.
+
+If you have users all over the globe, it can take a lot of time to access the files/videos saved at one location, eg. london, based of each individual's network connection, speed etc.
+
+In such situation, we can use amazon's CDN i.e. Content Delivery Network which can make work a lot more faster.
+
+1. Edge locations: The location where content is cached.
+2. ORigin: This is the origin of data that CDN distributes. This can be an S3 bucket, an EC2 instance, an ELB, or Route53.
+3. Distribution: This is the name given to the CDN which consists of collection of Edge Locations.
+
+If you enable CloudFront, how it works ?
+
+USers will first query the data from Edge Location. For the first time users when there is not data im Edge Location, the data is fetched from origin. For second time users who are trying to fetch the same data, since it is cached to Edge location, the data will be downloaded from Edge Location and not the origin which reduces latency for second users and so on.
+
+The data fetched from origin and stored in Edge location stays for a limited time period called <b>TTL</b>. TTL is always given in seconds and usually you will have TTL for 48 hours.
+
+## Two different types of CloudFront distribution
+
+1. Web distribution: Typically used for websites
+2. RTMP: Used for media streaming.
+
+## Things to remember
+
+* Edge locations are not just READ only, it allows to WRITE data too.
+* Objects are cached for the life of the TTL.
+* You can clear the cached objects, but you will be charged.
+
+### Useful links to official AWS site :
+
+1. [AWS CloudFront](https://aws.amazon.com/cloudfront/)

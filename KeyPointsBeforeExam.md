@@ -30,5 +30,9 @@ When to make use of IAM (Identity Access Management) Users, Groups, Roles and Po
 * Eventual consistency for overwrite PUTS and DELETES.
 * 6 different Storage classes: S3 Standard, S3 IA, S3 One Zone IA, S3 Intelligent Tiering, S3 Glacier, S3 Glacier Deep Archive.
 
+## CloudFront
 
-
+* Its amazon's CDN (Content Delivery Network). IF you turn on cloudFront, you will set up Edge locations to make data available with low latency.
+* Know what is TTL ?
+* READ and WRITE in Edge Locations.
+* Charges for cached data in Edge Location
