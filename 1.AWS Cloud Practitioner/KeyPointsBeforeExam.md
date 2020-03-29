@@ -1,6 +1,6 @@
 # Key Points to Revise Before Exam:
 
-
+![AWS Networking](https://github.com/supriya-s-jadhav/AWS-Certifications/blob/master/1.AWS%20Cloud%20Practitioner/Images/AWSNetworking.png)
 
 There are only 3 AWS services that are global: IAM, S3 and DNS.
 
