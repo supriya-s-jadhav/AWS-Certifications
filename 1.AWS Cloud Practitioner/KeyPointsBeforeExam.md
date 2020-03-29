@@ -1,5 +1,7 @@
 # Key Points to Revise Before Exam:
 
+
+
 There are only 3 AWS services that are global: IAM, S3 and DNS.
 
 ## Support Plans
@@ -127,4 +129,96 @@ What AWS service used to deploy applications on-premises ?
 * Understanding 3 fundamental drivers of cost with AWS : <b>Compute, Storage, Data OutBound</b>
 * Start early with cost optimization
 * Maximize the power of flexibility: You can choose and pay for exactly what you need and no more. No contract required with few exceptions.
-* 
+* Use right pricing model for the job.
+* What are AWS Free services (very imp topic for exam):
+    a. Amazon VPC
+    b. Elastic Beanstalk: Services provisioned are not free
+    c. CloudFromation: ervices provisioned are not free
+    e. IAM
+    f. Auto Scaling
+    g. Opsworks
+    h. Consolidated Billing
+* EC2 Pricing: What determines price:
+    a. Clock hours of server time
+    b. Instance type (t1micor etc)
+    c. Pricing models (On demand etc)
+    d. Number of instances
+    f. Type of load balancing (N/W load balancing is most expensive)
+    g. Detailed Monitoring
+    h. Auto scaling
+    i. Elastic IP addresses
+    j. OS and S/w packages
+* Know EC2 pricing models: On Demand, Reserved, Spot, Dedicated hosts
+* Lambda pricing: What determines price for Lambda?
+    a. Request Pricing: Free Tier you get 1 million request/month. After $0.20 per 1 million requests.
+    b. Duration Pricing: 400,000 GB-seconds per month free, up to 3.2 million seconds of compute time. After that, $0.00001667 for every GB-second used.
+    c. Additional charges: If your Lambda function uses other AWS services or transfers data.
+* EBS Pricing: What determines price for EBS?
+    a. Volumes (Per GB)
+    b. Snapshots (Per GB)
+    c. Data Transfer
+* S3 Pricing: What determines Price for S3?
+    a. Storage class (standard or IA etc)
+    b. Storage
+    c. Requests (GET/PUT/COPY)
+    d. Data transfer
+
+    Glacier Pricing: Storage and Data Retrieval times
+* Snowball Pricing: AWS Snowball is aPB-scale data transport solution used to transfer large amounts of data into and out of the AWS cloud.
+* What determines price for Snowball:
+    a. Service fee per job: Snowball 50TB: $200 and Snowball 80TB: $250
+    b. Daily charge: First 10 days are free, after that it's $15/day
+    c. Data transfer: Data transfer to S3 is free but Data transfer out is not.
+* RDS: What determines pricing for RDS?
+    a. Clock hours of server time
+    b. Database characteristics
+    c. Database purchase type
+    d. Number of db instances
+    e. Provisioned storage
+    f. Additional storage
+    g. Requests
+    h. Deployment type
+    i. Data transfer
+* DynamoDB: What determines pricing for DynamoDB:
+    a. Provisioned throughput (write)
+    b. Provisioned throughput (read)
+    c. Indexed data storage
+* CloudFront: What determines price for CloudFront?
+    a. Traffic Distribution
+    b. Requests
+    c. Data Transfer Out
+
+## AWS Budgets vs Cost Explorer
+
+* Remember the difference between both the services:
+    a. Budgets is used to budget costs BEFORE they are incurred.
+    b. Cost Explorer is used to explore costs AFTER they have been incurred.
+
+## AWS Support plans
+* Know four different types of support plans. The enterprise support plan has TAM.
+
+## Tags
+* Tags are key-value pair. Sometimes it can be inherited eg. ClouFormation tag will be inherited to all the resources provisioned by it.
+* Tag editor is a global service.
+
+## Resource Groups
+* It can be used for automation and bulk tagging
+
+## AWS organization
+* Two types: Full access and Consolidated billing.
+* Remember AWS best practices with AWs organizations.
+* Consolidate billing allows you ti get volume discounts on all accounts.
+
+## CloudTrail
+* Per AWS account and is enabled per region.
+* Can consolidate logs using S3 buckets.
+
+## AWS Quick Start
+* Its a way of deploying environments quickly using CloudFormation template.
+
+## AWS LAnding Zone
+* It helps you to set up multi-AWS environment based on AWS best practices.
+
+## AWS calculators
+* AWS simple monthly calculator
+* AWS TCO calculator: used for comparison and give executive level reports.

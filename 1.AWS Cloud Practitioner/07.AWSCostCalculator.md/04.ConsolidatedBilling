@@ -1,0 +1,7 @@
+# AWS Consolidated Billing
+
+It allows you to get volume discounts on all of your accounts.
+
+Unused reserved instances for EC2 are applied across the group.
+
+CloudTrail is on a per account and per region basis, but can be aggregated into a single bucket belonging to the paying account.
