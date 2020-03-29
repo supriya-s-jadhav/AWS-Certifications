@@ -115,3 +115,16 @@ What AWS service used to deploy applications on-premises ?
 * AWS Systems Manager can be used to manage fleets of EC2 instances and VM. A piece if software is installed on each VM. It can be both inside AWS and on-premise.
 * Run command is used to install, patch, uninstall software. You can use CloudWatch to have view of your AWS dashboard.
 
+## Different Pricing Models
+
+* Capex vs Opex: Capex i.e. Capital Expenditure meaning paying up front. It's a fixed and sunk cost. Opex i.e. Operational Expenditure where you pay for what you use.
+* 5 Pricing policies:
+    1. Pay as you go
+    2. Pay less when you reserve
+    3. Pay even less per unit by using more AWS resources
+    4. Pay even less as AWS grows
+    5. Custom pricing
+* Understanding 3 fundamental drivers of cost with AWS : <b>Compute, Storage, Data OutBound</b>
+* Start early with cost optimization
+* Maximize the power of flexibility: You can choose and pay for exactly what you need and no more. No contract required with few exceptions.
+* 
