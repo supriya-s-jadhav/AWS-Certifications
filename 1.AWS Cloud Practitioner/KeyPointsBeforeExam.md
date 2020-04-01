@@ -222,3 +222,37 @@ What AWS service used to deploy applications on-premises ?
 ## AWS calculators
 * AWS simple monthly calculator
 * AWS TCO calculator: used for comparison and give executive level reports.
+
+# Security
+
+## AWS Artifact
+* Used to retrieve compliance reports
+
+## AWS Shared responsibility model
+* AWS takes care of security of the cloud
+* Customer takes care of security in the cloud.
+
+## AWS WAF
+* Web application firewall, designed to stop hackers.
+
+## AWS Shield
+* Its turned on by default, you have to pay for advanced AWs shield.
+* AWS shield is a DDoS mitigation service designed to stop DDoS attacks.
+
+## AWS Inspector
+* It is used for inspecting EC2 instances for vulnerabilities.
+* AWS Trusted advisor inspects your AWS account as a whole om Cost Optimization, Performance, Fault Tolerance.
+
+## AWS CloudTrail
+* AWS cloudtrail increases visibility into your user and resource activity by recording AWS Management Console actions and API calls.
+
+## CloudWatch vs AWSConfig
+* Know the differences and the use case: Cloudwatch, AWSConfig.
+
+
+## Athena
+* It queries data stored in S3
+
+## Macie
+* It uses ML/AL to analyze data in S3 and helps identify PII.
+* Can also be used to analyze CloudTrail logs for suspicious API activity.
