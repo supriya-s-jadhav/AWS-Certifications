@@ -1,5 +1,7 @@
 # AWS Cloud Practitioner
 
+AWS Certified Cloud Practitioner exam is foundational level certification. It is intended for anyone, from absolute beginner to IT experienced person.
+
 AWS Certified Cloud Practitioner (AWS CCP) exam overview and preparation guide. Useful links from AWS site are added. This can be considered as a good starting point to prepare for the exam.
 
 AWS Certified Cloud Practitioner Exam is the easiest exam to pass for anyone with no prior cloud experience. I would highly recommend anyone who are on the journey of AWS certification to start with this basic certification and it also helps in boosting the experience. I wish everyone all the best !!
@@ -14,11 +16,42 @@ AWS Exam details: Passed AWS Certified Cloud Practitioner 2020
 
 Exam Experience: Exam topics covered in cloud practitioner exam:
 
-1. AWS Support Plans (Questions around selecting right support plan based on scenario. )
-2. The 5 Pillars of the AWS Well-Architected Framework (very important topic for the exam)
+1. AWS Support Plans (Questions around selecting right support plan based on scenario)
+2. The 5 Pillars of the AWS Well-Architect Framework (very important topic for the exam)
 3. AWS Billing and Pricing (AWS Organization, Consolidated Billing, Tagging, TCO calculator, Cost Explorer, AWS Budgets)
 4. AWS Security (Artifact, Many questions around Shared Responsibility Model, AWS Inspector)
 4. AWS Cloud Concepts
+
+
+## About Exam:
+
+Exam Time: 90 min
+
+Number of Questions: 65
+
+Minimum Passing Score: 70% (700/1000)
+
+Cost: $100
+
+Format: Multiple choice, multiple answer
+
+Validity: 3 Years
+
+Register for the exam: [Link to exam registration page](https://www.aws.training/certification?src=arc-assoc)
+
+Results: Provided immediately after completing the exam
+
+
+## Exam Topics:
+
+
+1. Cloud Concepts                     26%
+
+2. Security                           25%
+
+3. Technology                         33%
+
+4. Billing and Pricing                16%
 
 # Folder Structure
 
