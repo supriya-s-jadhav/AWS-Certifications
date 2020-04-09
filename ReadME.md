@@ -12,9 +12,11 @@ IF you are beginner to cloud technology or IT with zero experience to less exper
 
 ```
 AWS-Certifications
-|__ 1.AWS Cloud Practitioner
-|__ 2. AWS Certified Solutions Architect
-|__ 3. RHCSA
+|__ 1. AWS Cloud Practitioner
+|__ 2. AWS Certified Solutions Architect - Associate level
+|__ 3. AWS Certified Machine Learning - Specialty
+|__ 4. AWS Certified Data Analytics - Specialty
+|__ RHCSA
 ```
 
-Every folder has a Readme file that explains more in detail about the contents of the folder. Each folder is dedicated to the
+Every folder has a Readme file that explains more in detail about the contents of that particular folder respectively. 
