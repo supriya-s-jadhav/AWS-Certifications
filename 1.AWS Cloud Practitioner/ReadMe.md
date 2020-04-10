@@ -1,10 +1,10 @@
 # AWS Cloud Practitioner
 
+AWS Cloud Practitioner repository is about AWS Certified Cloud Practitioner exam preparation guide. Useful links from AWS site are added. This can be considered as a good starting point to prepare for the exam.
+
 AWS Certified Cloud Practitioner exam is foundational level certification. It is intended for anyone, from absolute beginner to IT experienced person.
 
-AWS Certified Cloud Practitioner (AWS CCP) exam overview and preparation guide. Useful links from AWS site are added. This can be considered as a good starting point to prepare for the exam.
-
-AWS Certified Cloud Practitioner Exam is the easiest exam to pass for anyone with no prior cloud experience. I would highly recommend anyone who are on the journey of AWS certification to start with this basic certification and it also helps in boosting the experience. I wish everyone all the best !!
+AWS Certified Cloud Practitioner Exam is the easiest exam to pass for anyone with no prior cloud experience. I would highly recommend anyone who are on the journey of AWS certification to start with this basic certification and it also helps in boosting the confidence. I wish everyone all the best !!
 
 # My experience in passing AWS Certified Cloud Practitioner
 
@@ -23,7 +23,7 @@ Exam Experience: Exam topics covered in cloud practitioner exam:
 4. AWS Cloud Concepts
 
 
-## About Exam:
+# About Exam:
 
 Exam Time: 90 min
 
@@ -42,7 +42,7 @@ Register for the exam: [Link to exam registration page](https://www.aws.training
 Results: Provided immediately after completing the exam
 
 
-## Exam Topics:
+# Exam Topics:
 
 
 1. Cloud Concepts                     26%
@@ -52,6 +52,46 @@ Results: Provided immediately after completing the exam
 3. Technology                         33%
 
 4. Billing and Pricing                16%
+
+## AWS Cloud Practitioner Exam Guide details:
+
+The AWS Certified Cloud Practitioner Exam covers questions that can be classified in different domains as explained below:
+
+### Domain 1 : Cloud Concepts
+
+1.1 Define the AWS Cloud and its value proposition
+
+1.2 Identify aspects of AWS Cloud economics
+
+1.3 List the different cloud architecture design principles
+
+### Domain 2 : Security and Compliance
+
+2.1 Define the AWS shared responsibility model
+
+2.2 Define AWS Cloud Security and compliance concepts
+
+2.3 Identify AWS access management capabilities
+
+2.4 Identify resources for security support
+
+### Domain 3 : Technology
+
+3.1 Define methods of deploying and operating in the AWS cloud
+
+3.2 Define the AWS global infrastructure
+
+3.3 Identify the core AWS services
+
+3.4 Identify resources for technology support
+
+### Domain 4 : Billing and Pricing
+
+4.1 Compare and contrast the various pricing models for AWS
+
+4.2 Recognize the various account structures in relation to AWS billing and pricing
+
+4.3 Identify resources available for billing support
 
 # Folder Structure
 
@@ -115,7 +155,7 @@ AWS Cloud Practitioner
 
 ```
 
-# References used :
+# Useful links to official AWS site :
 
 1. [AWS documentation](https://docs.aws.amazon.com/index.html?nc2=h_ql_doc)
 2. [AWS Whitepapers](https://aws.amazon.com/whitepapers/?whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc)
