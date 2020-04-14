@@ -37,11 +37,72 @@ They are wrappers or containers that contains all the streaming data that we wan
 
     c. data blob (your payload, upto 1 MB)
 
+* Transient Data store: retention period of the data records are 24 hours. We can increase it to 7 hours.
+
+How do we get out data into shards or kinesis data streams ??
+
+1. Kinesis Producer Library (KPL)
+
+Easy to use library that allows you to write to a kinesis data streams.
+
+2. Kinesis Client library (KCL)
+
+Integrated directly with KPL for consumer applications to consume and process data from kinesis Data Stream.
+
+3. Kinesis API (AWS SDK)
+
+Used for low level API operations to send records to a kinesis Data stream.
+
+<b> When to use Kinesis Data Streams ? </b>
+
+* Needs to be processed by consumers.
+
+* Real time analytics
+
+* Feed into other services in real time
+
+* Some action needs to occur on your data
+
+* Storing data is optional
+
+* Data retention is important
+
+### Use cases
+
+1. Process and evaluate logs immediately.
+
+Example: Analyze system and application logs continuously and process within seconds.
+
+2. Real time dat analytics
+
+Example: Run real-time analytics on click stream data and process it within seconds.
+
 ### Kinesis Data Firehose
 
 Load data streams into AWS data stores.
 
 Amazon Kinesis Data Firehose is the easiest way to capture, transform, and load data streams into AWS data stores for near real-time analytics with existing business intelligence tools.
+
+We don't have to worry about Shards. We can use lambda for ETL, pre-processing with lambda is optional.
+
+Data Producers -> Processing tools (optional) -> Storage (Redshift, S3->s3 event -> DynamoDB)
+
+Difference in Kinesis Data Streams and Kinesis Data Firehose
+
+Kinesis Data streams has shards and data retention (you can hold on to your data for 24 hours to 7 days).
+
+With Kinesis Data firehose, you don't have to worry about shards. It is mainly use to streaming data store in storage service like S3.
+
+When should use Kinesis Data Firehose?
+
+1. You want to collect/store streaming data.
+
+2. Processing is optional.
+
+3. Final destination is S3 (or other data store)
+
+4. Data retention is not important.
+
 
 ### Kinesis Video Streams
 
