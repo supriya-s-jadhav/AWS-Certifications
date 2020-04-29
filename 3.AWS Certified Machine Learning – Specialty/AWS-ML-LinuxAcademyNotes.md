@@ -292,17 +292,325 @@ Use case: Text analysis and topic allocation
 
 ### 4. Deep Learning Algorithms
 
+#### 4.1 Neural Networks
 
+Input layer --> Hidden layer --> Output
+
+Every input neuron has weight. We multiply the value of neuron with neuron weight and add all the values we got for all the neurons. This brings the linearity in the model. Hence we add bias and Activation function to make it non-linear.
+
+3 different types of activation function:
+
+1. Sigmoid
+2. ReLU (we will focus more on this)
+3. Tanh
+
+Loss Function: Its an optimization function to figure out better weight and biases to reduce the loss and make prediction more accurate.
+
+Gradient Decent, Learning Rate
+
+----> Forward propagation ---->
+
+    Epoch (Loss Function)            Epoch is the combination of Forward and backward propagation
+
+----> Backward propagation ---->
+
+#### 3.2 Convolutional Neural Network
+
+Type: Supervised
+
+Example Inference: Classification
+
+Use cases: Image classification, Spatial analysis
+
+The hidden layers in Neural network are called Convolutional layers.
+
+In CNN, it tries to identify different characteristics of an image and that is how it differentiates one image from others. For example, for a penguin image it will identify eyes, feathers, hands etc.
+
+It uses filters. CNN comes with some pre-trained edge detection (transfer learning)
+
+#### 3.3 Recurrent Neural Network (RNN)
+
+Type: Supervised
+
+Example Inference: Other
+
+Use cases: Stock predictions, Time series data, Voice recognition (seq to seq) like translating eg. speak in english and translate to spanish.
+
+What makes RNN different from other Neural Network ??
+
+RNN maps the series of activities. Whatever is the output, it gives it as input back again. RNN has memory that is used to remember previous prediction and it allows to influence future prediction.
+
+It has ability to remember a bit. <b> LSTM i.e. Long short term memory can remember a lot.
 
 ### 5. Model Performance and Optimization
 
+#### 5.1 Confusion Matrix
+
+We will know how well the ML algorithm performing using confusion matrix.
+
+Actual Values
+| | | | |
+| -|-|-|-|
+| | | Like Dogs | Don't like dogs |
+| Model | Like Dog | True Positive </br> Actual and predicted Like dogs | False Positive </br> Actual: does not like dog and Predicted: Like dogs |
+| Prediction | Don't like dog | False Negatives </br> Actual: Likes dogs and Predicted: Does not like dogs | True Negatives </br> Actual and Predicted: Does not like dogs |
+
+#### 5.2 Sensitivity and Specificity
+
+Sensitivity or Recall or TPR
+
+The number of correct positives out of the actual positive results
+
+Sensitivity = TP / TP + FN
+
+Closer he sensitive value of a model to 1, the less False Negatives are.
+
+Example: In Fraud detection, we want as close Sensitivity to 1 as possible
+
+Specificity or TNR
+
+The number of correct negatives out of the actual negative results.
+
+Specificity = TN / TN + FP
+
+Example: In classifying appropriate video content for kids, we want specificity value as close to 1 as possible.
+
+#### 5.3 Accuracy and Precision
+
+Accuracy:
+
+The proportion of all predictions that were correctly identified. Simplest way of looking at the performance of the model. How right is the model ?
+
+Accuracy = TP + TN / Total
+
+Precision: Proportion of actual positives we identified.
+
+Precision = TP / TP + FP
+
+#### 5.4 ROC/AUC
+
+#### 5.5 Gini Impurity
+
+Gini Impurity = 1 - (probability of dogs)2 - (probability of cat)2
+
+#### 5.6 F1 Score
+
+F1 Score = 2 (Recall x Precision/ Recall + Precision)
+
 ### 6. Machine Learning Tools and Framework
 
-## AWS Services
+#### 6.1 ML  and DL frameworks
 
-## AWS Application Services AI/ML
+What is the difference between frameworks and algorithms ?
 
-## Amazon Sagemaker
+1. TensorFlow
+
+Examples of frameworks: PyTorch, mxnet, Keras, GluOn, TensorFlow, Scikit-learn
+
+Frameworks provide lot of algorithms to work with.
+
+tensorflow terminologies using python:
+
+tf.get_default_graph()
+graph.get_operations()
+
+tf.Session()
+
+2. PyTorch
+
+3. MXNet
+
+We can mention cpu or gpu, on which MXNet algorithm will run.
+
+4. Sci-kit learn
+
+## AWS Services 1.5
+
+#### 1.S3
+
+S3
+
+- Cost effective storage for large amounts of data.
+- Structured and unstructured
+- Data lake (Seems like Amazon wants people for use S3 for data lake)
+
+2. Data Lake
+
+- Collection of different S3 buckets.
+- Destination for all data sets
+- Structured data (CSV, JSON)
+- Unstructured data (Text files, Images)
+
+Advantages
+
+- Add data from many sources
+- Define the data schema at the time of analysis
+- Much lower cost than data warehouse solutions
+- Tolerant of low-quality data
+
+Disadvantages
+
+- Unsuitable for transactional systems
+- Needs cataloguing before analysis
+
+Architecture 1:
+
+                                    (when Athena queries data in S3, it creates a view of data in S3 and stores it back in S3 to be sued for ML/DL tools )
+Amazon Kinesis Data Firehouse -> S3 -> Athena -> ML/DL (SageMaker)
+                                |___________|
+                            AWS Glue (It can crawl through S3 bucket and produce a Data Catalog that Athena can use)
+
+Architecture 2
+
+Amazon Kinesis Data Firehouse ---> S3 ---> Athena ---> ML/DL(SageMaker)
+Other                                     EMR/Spark
+
+Security
+- IAM USers and Roles
+- Bucket Policy
+
+Encryption
+- S3 SSE
+- S3 KMS
+
+#### 2. AWS Glue
+
+When we put all the data in S3, we need some tool to catalogue the data in S3 to be able to query and use it in other tools like Athena.
+
+- Creates catalogues of data (schema)
+- Performs ETL
+- Some limited ML capabilities
+
+AWS Glue is not a database, it serves as an end point to different data sources.
+
+#### 3. Athena
+
+- Query S3 data with SQL
+- Source data from multiple S3 locations
+- Save outputs to S3
+- Use for data pre-processing ahead of ML
+
+#### 4. Quicksight
+
+- Its a BI tool
+- Visualiza data from many sources
+    - Dashboards
+    - Email Reports
+    - Embedded reports
+- End-user targeted
+
+#### 5. Amazon Kinesis
+
+- Ingesting large scale data
+- Lots of data from a few sources (video)
+- Small amount of data from many sources (IoT)
+
+| Amazon Kinesis | Amazon Kinesis Data Streams | Amazon Kinesis Data Firehose | Amazon Kinesis Data Analytics |
+|--------|--------|---------|----------|
+| Securely stream video from connected devices to AWS for analytics, ML, playback, other processing | General endpoint for ingesting large amounts of data for processing by: Kinesis data analytics, Spark on EMR, Amazon EC2, Lambda | Simple endpoint to stream data into: S3, Redshift, ElasticSearch, Splunk(third party tool) | Processing streaming data from kinesis streams or Firehose at scale using : SQL, Java libraries |
+
+Architecture 1
+
+IoT --> Amazon Kinesis Data Streams --> EMR/Spark --> S3
+
+Architecture 2
+
+Video Camera --> Amazon Kinesis Video Streams --> Amazon Rekognition Video --> Amazon Kinesis Data Streams --> AWS Lambda --> AWS SNS --> Mobile
+
+#### 6. EMR with Spark
+
+Amazon EMR
+- Managed service for hosting massively parallel compute tasks.
+- Integrates with storage service S3
+- Petabyte scale
+- Uses 'big data' tools:
+    - Spark
+    - Hadoop
+    - HBase
+
+EMR (Elastic Map Reduce)
+_________________________________
+| MAster Node                    |
+|  _____________  _____________  |
+|  | Core Node  | | Task Node |  |
+|    ------------   ------------ |
+| -------------------------------|
+
+Core Nodes : can add more EC2 instances gracefully there
+Task Nodes: can add spot instances
+
+Apache Spark
+- Fast analytics engine
+- Massively parallel compute tasks
+- Deployed over clusters of resources
+
+Variations of Spark run on:
+- Amazon EMR
+- Amazon SageMaker
+
+Amazon EMR and Spark
+
+ML
+- Integrates into Amazon SageMaker
+- Performs massive ETL of data into SageMAker
+
+S3 --> EMR/Spark --> Sagemaker
+
+#### 7. EC2 for ML
+
+EC2 instance types
+
+- AWS EC2 instance types targeted at ML tasks:
+    - Compute optimized
+    - Accelerated Computing (GPU)
+- The ml.*instances are not available outside of SageMaker
+
+Amazon Machine Images(AMIs): Ubuntu, Linux, Windows
+- Condo based Deep Learning AMIs
+- Libraries: TensorFlow, Keras,MXNet, Gluon, PyTorch
+- GPU acceleration: CUDA 8 and 9, cuDNN 6 and 7, NCCL 2.0.5 libraries, NVidia Driver 384.81
+
+Amazon MAchine Images (AMIs)
+- Deep LEarning Base AMIs
+(They don't with Conda and libraries. IF you know what yo want, you have to install)
+
+EC2 Instance type limits
+- Brand new account = no ML for you
+- Service limit increases take days.
+
+Amazon SageMaker ML Instance Types
+
+<b> AWS ML service is no longer available, it only supports the existing project. It is superseded by SageMaker</b>
+
+## AWS Application Services AI/ML 1.5 n Prac: 2.5
+
+Services used in text to speech, speech to text, image classification, text classification
+
+#### 1. Amazon Rekognition
+
+
+
+- Image and video analysis
+- PRe trained deep learning
+- Simple API
+- Image moderation
+- Facial analysis
+- Celebrity recognition
+- Face comparison
+- Text in image
+
+#### 2.
+
+#### 3.
+
+#### 4.
+
+#### 5.
+
+#### 6.
+
+
+## Amazon Sagemaker 3
 
 ### 1. Introduction
 
