@@ -228,7 +228,7 @@ Type: Supervised
 
 Example Inference: Binary Yes or No, Numeric 1,2,3 and Classification
 
-##### 3.6 K-means
+#### 3.6 K-means
 
 Type: Unsupervised
 
@@ -238,7 +238,7 @@ K represent the number we provide that tells how many classes we want.
 
 K-means algorithm does lot of iterations to categorize data point sin k classes. How do we know which one is best ? The algorithm looks at the variation of the result.
 
-### 3.7 K-Nearest Neighbor
+#### 3.7 K-Nearest Neighbor
 
 Type: Supervised
 
@@ -250,7 +250,7 @@ How to select K ??
 - Make k large enough to reduce the influence of outliers
 - Make k small enough that classes with a small sample size don't lose influence.
 
-### 3.8 Latent Dirichlet Allocation algorithm (LDA)
+#### 3.8 Latent Dirichlet Allocation algorithm (LDA)
 
 Type: Unsupervised
 
@@ -295,7 +295,7 @@ Use case: Text analysis and topic allocation
 
 ### 4. Deep Learning Algorithms
 
-### 4.1 Neural Networks
+#### 4.1 Neural Networks
 
 Input layer --> Hidden layer --> Output
 
@@ -317,7 +317,7 @@ Gradient Decent, Learning Rate
 
 ----> Backward propagation ---->
 
-### 3.2 Convolutional Neural Network
+#### 4.2 Convolutional Neural Network
 
 Type: Supervised
 
@@ -331,7 +331,7 @@ In CNN, it tries to identify different characteristics of an image and that is h
 
 It uses filters. CNN comes with some pre-trained edge detection (transfer learning)
 
-### 3.3 Recurrent Neural Network (RNN)
+#### 4.3 Recurrent Neural Network (RNN)
 
 Type: Supervised
 
@@ -343,11 +343,11 @@ What makes RNN different from other Neural Network ??
 
 RNN maps the series of activities. Whatever is the output, it gives it as input back again. RNN has memory that is used to remember previous prediction and it allows to influence future prediction.
 
-It has ability to remember a bit. <b> LSTM i.e. Long short term memory can remember a lot.
+It has ability to remember a bit. <b> LSTM i.e. Long short term memory can remember a lot. </b>
 
 ### 5. Model Performance and Optimization
 
-### 5.1 Confusion Matrix
+#### 5.1 Confusion Matrix
 
 We will know how well the ML algorithm performing using confusion matrix.
 
@@ -358,7 +358,7 @@ Actual Values
 | Model | Like Dog | True Positive </br> Actual and predicted Like dogs | False Positive </br> Actual: does not like dog and Predicted: Like dogs |
 | Prediction | Don't like dog | False Negatives </br> Actual: Likes dogs and Predicted: Does not like dogs | True Negatives </br> Actual and Predicted: Does not like dogs |
 
-### 5.2 Sensitivity and Specificity
+#### 5.2 Sensitivity and Specificity
 
 Sensitivity or Recall or TPR
 
@@ -378,7 +378,7 @@ Specificity = TN / TN + FP
 
 Example: In classifying appropriate video content for kids, we want specificity value as close to 1 as possible.
 
-### 5.3 Accuracy and Precision
+#### 5.3 Accuracy and Precision
 
 Accuracy:
 
@@ -390,19 +390,19 @@ Precision: Proportion of actual positives we identified.
 
 Precision = TP / TP + FP
 
-### 5.4 ROC/AUC
+#### 5.4 ROC/AUC
 
-### 5.5 Gini Impurity
+#### 5.5 Gini Impurity
 
 Gini Impurity = 1 - (probability of dogs)2 - (probability of cat)2
 
-### 5.6 F1 Score
+#### 5.6 F1 Score
 
 F1 Score = 2 (Recall x Precision/ Recall + Precision)
 
 ### 6. Machine Learning Tools and Framework
 
-### 6.1 ML  and DL frameworks
+#### 6.1 ML  and DL frameworks
 
 What is the difference between frameworks and algorithms ?
 
@@ -427,7 +427,7 @@ We can mention cpu or gpu, on which MXNet algorithm will run.
 
 4. Sci-kit learn
 
-## AWS Services 1.5
+## AWS Services
 
 ### 1.S3
 
@@ -592,7 +592,7 @@ Amazon SageMaker ML Instance Types
 
 <b> AWS ML service is no longer available, it only supports the existing project. It is superseded by SageMaker</b>
 
-## AWS Application Services AI/ML 1.5 n Prac: 2.5
+## AWS Application Services AI/ML 
 
 Services used in text to speech, speech to text, image classification, text classification
 
