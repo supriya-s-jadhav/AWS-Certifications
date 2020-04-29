@@ -588,7 +588,7 @@ Services used in text to speech, speech to text, image classification, text clas
 
 #### 1. Amazon Rekognition
 
-
+Amazon Rekognition for Image analysis
 
 - Image and video analysis
 - PRe trained deep learning
@@ -598,6 +598,26 @@ Services used in text to speech, speech to text, image classification, text clas
 - Celebrity recognition
 - Face comparison
 - Text in image
+
+Use cases:
+- Create a filter to prevent inappropriate images being sent via a msg platform. This can include nudity or offensive text.
+- Enhance metadata catalog of an image library to include the number of people in each image.
+- Scan an image library to detect instances of famous people.
+
+Amazon Rekognition for video analysis
+
+
+- Image and video analysis
+- PRe trained deep learning
+- Simple API
+- Process through Stored video (eg. stored video in S3)
+- Streaming video like security camera
+
+Architecture for stored video and streaming videos
+
+![example for stored video]()
+
+-> S3 -> Rekognition
 
 #### 2.
 
