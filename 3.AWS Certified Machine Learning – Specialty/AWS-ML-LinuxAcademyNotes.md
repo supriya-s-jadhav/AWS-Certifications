@@ -617,6 +617,10 @@ Architecture for stored video and streaming videos
 
 ![example for stored video]()
 
+![example for streaming video]()
+
+
+
 -> S3 -> Rekognition
 
 #### 2.
