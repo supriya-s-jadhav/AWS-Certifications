@@ -259,6 +259,8 @@ Example Inference: Classification, other
 Use cases: Mostly used to text classification like Topic analysis, Sentiment analysis and Automated document tagging
 
 Text document collection are called corpus.
+
+```
 _______________________________________________
 |    Corpus                                     |
 |  | Doc1:   |    | Doc2:       |  | Doc3    |  |
@@ -268,6 +270,7 @@ _______________________________________________
 |  |         |    |             |  |         |  |
 |                                               |
 |_____________________________________________  |
+```
 
 - Randomly assign topics to each word
 - Count the topics by document
@@ -454,17 +457,20 @@ Disadvantages
 - Needs cataloguing before analysis
 
 Architecture 1:
+```
 
                                     (when Athena queries data in S3, it creates a view of data in S3 and stores it back in S3 to be sued for ML/DL tools )
 Amazon Kinesis Data Firehouse -> S3 -> Athena -> ML/DL (SageMaker)
                                 |___________|
                             AWS Glue (It can crawl through S3 bucket and produce a Data Catalog that Athena can use)
+```
 
 Architecture 2
 
+```
 Amazon Kinesis Data Firehouse ---> S3 ---> Athena ---> ML/DL(SageMaker)
 Other                                     EMR/Spark
-
+```
 Security
 - IAM USers and Roles
 - Bucket Policy
@@ -529,12 +535,16 @@ Amazon EMR
     - HBase
 
 EMR (Elastic Map Reduce)
+
+```
 _________________________________
 | MAster Node                    |
 |  _____________  _____________  |
 |  | Core Node  | | Task Node |  |
 |    ------------   ------------ |
 | -------------------------------|
+
+```
 
 Core Nodes : can add more EC2 instances gracefully there
 Task Nodes: can add spot instances
