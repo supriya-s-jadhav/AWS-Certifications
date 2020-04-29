@@ -228,7 +228,7 @@ Type: Supervised
 
 Example Inference: Binary Yes or No, Numeric 1,2,3 and Classification
 
-#### 3.6 K-means
+##### 3.6 K-means
 
 Type: Unsupervised
 
@@ -238,7 +238,7 @@ K represent the number we provide that tells how many classes we want.
 
 K-means algorithm does lot of iterations to categorize data point sin k classes. How do we know which one is best ? The algorithm looks at the variation of the result.
 
-#### 3.7 K-Nearest Neighbor
+### 3.7 K-Nearest Neighbor
 
 Type: Supervised
 
@@ -250,7 +250,7 @@ How to select K ??
 - Make k large enough to reduce the influence of outliers
 - Make k small enough that classes with a small sample size don't lose influence.
 
-#### 3.8 Latent Dirichlet Allocation algorithm (LDA)
+### 3.8 Latent Dirichlet Allocation algorithm (LDA)
 
 Type: Unsupervised
 
@@ -295,7 +295,7 @@ Use case: Text analysis and topic allocation
 
 ### 4. Deep Learning Algorithms
 
-#### 4.1 Neural Networks
+### 4.1 Neural Networks
 
 Input layer --> Hidden layer --> Output
 
@@ -317,7 +317,7 @@ Gradient Decent, Learning Rate
 
 ----> Backward propagation ---->
 
-#### 3.2 Convolutional Neural Network
+### 3.2 Convolutional Neural Network
 
 Type: Supervised
 
@@ -331,7 +331,7 @@ In CNN, it tries to identify different characteristics of an image and that is h
 
 It uses filters. CNN comes with some pre-trained edge detection (transfer learning)
 
-#### 3.3 Recurrent Neural Network (RNN)
+### 3.3 Recurrent Neural Network (RNN)
 
 Type: Supervised
 
@@ -347,7 +347,7 @@ It has ability to remember a bit. <b> LSTM i.e. Long short term memory can remem
 
 ### 5. Model Performance and Optimization
 
-#### 5.1 Confusion Matrix
+### 5.1 Confusion Matrix
 
 We will know how well the ML algorithm performing using confusion matrix.
 
@@ -358,7 +358,7 @@ Actual Values
 | Model | Like Dog | True Positive </br> Actual and predicted Like dogs | False Positive </br> Actual: does not like dog and Predicted: Like dogs |
 | Prediction | Don't like dog | False Negatives </br> Actual: Likes dogs and Predicted: Does not like dogs | True Negatives </br> Actual and Predicted: Does not like dogs |
 
-#### 5.2 Sensitivity and Specificity
+### 5.2 Sensitivity and Specificity
 
 Sensitivity or Recall or TPR
 
@@ -378,7 +378,7 @@ Specificity = TN / TN + FP
 
 Example: In classifying appropriate video content for kids, we want specificity value as close to 1 as possible.
 
-#### 5.3 Accuracy and Precision
+### 5.3 Accuracy and Precision
 
 Accuracy:
 
@@ -390,19 +390,19 @@ Precision: Proportion of actual positives we identified.
 
 Precision = TP / TP + FP
 
-#### 5.4 ROC/AUC
+### 5.4 ROC/AUC
 
-#### 5.5 Gini Impurity
+### 5.5 Gini Impurity
 
 Gini Impurity = 1 - (probability of dogs)2 - (probability of cat)2
 
-#### 5.6 F1 Score
+### 5.6 F1 Score
 
 F1 Score = 2 (Recall x Precision/ Recall + Precision)
 
 ### 6. Machine Learning Tools and Framework
 
-#### 6.1 ML  and DL frameworks
+### 6.1 ML  and DL frameworks
 
 What is the difference between frameworks and algorithms ?
 
@@ -429,7 +429,7 @@ We can mention cpu or gpu, on which MXNet algorithm will run.
 
 ## AWS Services 1.5
 
-#### 1.S3
+### 1.S3
 
 S3
 
@@ -479,7 +479,7 @@ Encryption
 - S3 SSE
 - S3 KMS
 
-#### 2. AWS Glue
+### 2. AWS Glue
 
 When we put all the data in S3, we need some tool to catalogue the data in S3 to be able to query and use it in other tools like Athena.
 
@@ -489,14 +489,14 @@ When we put all the data in S3, we need some tool to catalogue the data in S3 to
 
 AWS Glue is not a database, it serves as an end point to different data sources.
 
-#### 3. Athena
+### 3. Athena
 
 - Query S3 data with SQL
 - Source data from multiple S3 locations
 - Save outputs to S3
 - Use for data pre-processing ahead of ML
 
-#### 4. Quicksight
+### 4. Quicksight
 
 - Its a BI tool
 - Visualiza data from many sources
@@ -505,7 +505,7 @@ AWS Glue is not a database, it serves as an end point to different data sources.
     - Embedded reports
 - End-user targeted
 
-#### 5. Amazon Kinesis
+### 5. Amazon Kinesis
 
 - Ingesting large scale data
 - Lots of data from a few sources (video)
@@ -523,7 +523,7 @@ Architecture 2
 
 Video Camera --> Amazon Kinesis Video Streams --> Amazon Rekognition Video --> Amazon Kinesis Data Streams --> AWS Lambda --> AWS SNS --> Mobile
 
-#### 6. EMR with Spark
+### 6. EMR with Spark
 
 Amazon EMR
 - Managed service for hosting massively parallel compute tasks.
@@ -566,7 +566,7 @@ ML
 
 S3 --> EMR/Spark --> Sagemaker
 
-#### 7. EC2 for ML
+### 7. EC2 for ML
 
 EC2 instance types
 
@@ -596,7 +596,7 @@ Amazon SageMaker ML Instance Types
 
 Services used in text to speech, speech to text, image classification, text classification
 
-#### 1. Amazon Rekognition
+### 1. Amazon Rekognition
 
 Amazon Rekognition for Image analysis
 
@@ -631,15 +631,61 @@ Architecture for stored video and streaming videos
 
 -> S3 -> Rekognition
 
-#### 2.
+USe cases
+- Detect people of interest in alive video stream for a public safety application
+- Create a metadata catalog for stock video footage
+- Detect offensive content with video uploaded to a social media platform
 
-#### 3.
+### 2. Amazon Polly
 
-#### 4.
+It converts text into speech. Think of it as a parrot
 
-#### 5.
+- Text to speech (TTS)
+- Deep LEarning powered
+- Simple API
+- Language
+- Female or male
+- Custom lexicons
 
-#### 6.
+Use Cases
+- Create accessibility tools to "read" web content
+- Provide automatically generated announcements via a public address (PA) system
+- Create an automated voice response (AVR) solution for a telephony system (including Amazon Connect)
+
+### 3. Transcribe
+
+Automatic speech to text translate.
+
+- Automatic speech recognition
+- Pre-trained deep learning
+- simple API
+- Language
+- Custom vocabulary
+
+Use cases
+- Create a call center monitoring solution that integrates with other service to analyze caller sentiment
+- Create a solution to enable text search of media with spoken words
+- Provide a closed captioning solution for online video training.
+
+### 4. Amazon Translate
+
+We can provide different documents/strings/text in various languages and expect it to get back in different language.
+
+- Text translation service.
+- Uses pre-trained deep learning
+- Simple API
+- Batch (bunch of docs in S3) or real-time
+- Languages
+- Custom terminology
+
+Use cases
+- Enhance an online customer chat application to translate conversations in real-time
+- Batch translate documents within a multilingual company
+- Create a news publishing solution to convert posted stories to multiple languages
+
+### 5.
+
+### 6.
 
 
 ## Amazon Sagemaker 3
