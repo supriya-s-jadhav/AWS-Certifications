@@ -541,7 +541,7 @@ _________________________________
 | MAster Node                    |
 |  _____________  _____________  |
 |  | Core Node  | | Task Node |  |
-|    ------------   ------------ |
+|   ------------   -----------   |
 | -------------------------------|
 
 ```
@@ -592,7 +592,7 @@ Amazon SageMaker ML Instance Types
 
 <b> AWS ML service is no longer available, it only supports the existing project. It is superseded by SageMaker</b>
 
-## AWS Application Services AI/ML 
+## AWS Application Services AI/ML
 
 Services used in text to speech, speech to text, image classification, text classification
 
@@ -683,10 +683,109 @@ Use cases
 - Batch translate documents within a multilingual company
 - Create a news publishing solution to convert posted stories to multiple languages
 
-### 5.
+### 5. Amazon Comprehend
 
-### 6.
+Its a natural language processing solution. We provide text and it returns text's analysis.
 
+- Text analysis
+- Natural language processing (NLP)
+- Pre-trained deep learning
+- Simple API
+
+Features
+- Keyphrase extraction
+- Sentiment analysis
+- Syntax analysis
+- Entity recognition
+- Medical Named Entity and Relationship Extraction (NERe)
+- Custom entities
+- Language detection
+- Custom classification
+- Topic modeling
+- Multiple language support
+
+Use cases
+- Perform customer sentiment analysis on inbound message to support the system
+- Create a system to label unstructured (clinical) data to assist in research and analysis
+- Determine the topics from transcribed audio recording of company meetings.
+
+### 6. Amazon Lex
+
+It has a lot to do with Alexa. It is a conversation interface service. Its like Alexa or chat bot.
+
+- Conversation interface service
+- Think Alexa or chatbots
+- Voice enabled or text
+- Automatic speech recognition
+- Natural language understanding (NLU)
+
+Use cases
+- Create a chatbot that triages customer support requests directly on the product page of a website
+- Create an automated receptionist that directs people as they enter a building
+- Provide an interactive voice interface to [...] application
+
+### 7. Amazon Service Chaining
+
+Example : Input text file and tell the sentiment in the file.
+
+```
+
+Text file  --> S3 --> Lambda --> Amazon Comprehend
+
+- Lambda will invoke Amazon Comprehend service, tell it to get text file from S3, do sentiment/keyword analysis and respond back to lambda.
+- It will do the next step like save the response in S3 or send an SNS notification
+
+```
+```
+Bad architecture:
+
+Text file -> S3 -> Lambda -> Amazon Translate
+              |                      |
+              |        |<----------->|
+              <---------------------->
+                       |<------------------------>  Amazon Comprehend
+- Lambda will invoke Amazon translate service, it will get the text file form S3 and respond back to lambda with translated file.
+- Next, lambda will invoke and send the file to Amazon comprehend and it will respond back with processed file to lambda.
+- Lambda will do the next step like save in S3 or send SNS.
+
+Lambda best practices:
+- It should do only one job at a time. Im above architecture we saw it is doing multiple jobs.
+
+Solution: Add second Lambda? Not good either. Use AWS Step Functions
+
+AWS Step Functions: To orchestrate multiple lambda function in big architecture.
+                _______________________________
+                |Step Function (state machine) |
+     lambda1 -->|   Lambda2 -----> Lambda3     |--> S3/SNS
+       /|\      |------------------------------|
+        |            /|\             /|\
+        |            \|/             \|/
+Text -> S3 <------  Amazon <------  Amazon
+file       ------> Translate ----> Comprehend
+
+Example: Working with audio files. Replace Translate service with Transcribe in above architecture.
+                _______________________________
+                |Step Function (state machine) |
+     lambda1 -->|   Lambda2 -----> Lambda3     |--> S3/SNS
+       /|\      |------------------------------|
+        |            /|\             /|\
+        |            \|/             \|/
+Text -> S3 <------  Amazon <------  Amazon
+file       ------> Transcribe ----> Comprehend
+
+Above is bad architecture. Lambda2 function has to wait until Amazon Transcribe to finish and sometimes Transcribe can take long time to finish. And, the architecture starts to fall apart. IT is an asynchronous service.
+
+Solution:
+                __________________________________________________
+                |Step Function (state machine)                    |
+     lambda1 -->|   Lambda2 -> time -> Lambda3 -> ? -> Lambda4    |--> S3/SNS
+       /|\      |-------------------------------------------------|
+        |            /|\                 |/|\             /|\
+        |            \|/                 | |              \|/
+Text -> S3 <------  Amazon <-------------| |             Amazon
+file       ------> Transcribe -------------|            Comprehend
+
+```
 
 ## Amazon Sagemaker 3
 
