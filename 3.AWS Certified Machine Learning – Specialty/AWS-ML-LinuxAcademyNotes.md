@@ -615,11 +615,9 @@ Amazon Rekognition for video analysis
 
 Architecture for stored video and streaming videos
 
-![example for stored video]()
+![example for stored video](https://github.com/supriya-s-jadhav/AWS-Certifications/blob/master/3.AWS%20Certified%20Machine%20Learning%20%E2%80%93%20Specialty/Images/architecture_stored_video.png)
 
-![example for streaming video]()
-
-
+![example for streaming video](https://github.com/supriya-s-jadhav/AWS-Certifications/blob/master/3.AWS%20Certified%20Machine%20Learning%20%E2%80%93%20Specialty/Images/architecture_for_streaming_video.png)
 
 -> S3 -> Rekognition
 
