@@ -791,12 +791,210 @@ file       ------> Transcribe -------------|            Comprehend
 
 ### 1. Introduction
 
+Its a fully managed service that covers the entire machine learning workflow to label and prepare your data, choose an algorithm, train model, tune and optimize it for deployment, make predictions and take action.
+
+The three stages of SageMaker:
+
+- Build
+    - Preprocessing
+    - Ground Truth
+    - Notebooks
+
+- Train
+    - Built-in algorithms
+    - Hyperparameter tuning
+    - Notebooks
+    - Infrastructure
+
+- Deploy
+    - Realtime
+    - Batch
+    - Notebooks
+    - Infrastructure
+    - Neo
+
 ### 2. Build
+
+#### 2.1 Data Preprocessing
+
+- SageMaker Components
+    - SageMaker Notebooks
+    - Sagemaker Algorithms
+
+#### 2.2 Amazon Ground Truth
+
+Build highly accurate training data sets using machine learning and reduce data labelling costs by up to 70%.
+
+- Features
+    - Reduce data labeling costs by up to 70%
+    - Work with public and private human labelers
+    - Define work instructions
+
+#### 2.3 AWS SageMaker Algorithms
+
+Where do we get built-in algorithms in AWS SageMaker
+
+- Sources
+    - SageMaket built-in algorithms
+    - AWS Marketplace
+    - Custom (you can build your own algorithms)
+
+- SageMaker Built-in Algorithms
+    - BlazingText
+    - Image classification algorithm
+    - K-means
+    - KNN
+    - Latent Dirichlet allocation algorithm
+    - Linear learner algorithm
+    - Object2Vec algorithm
+    - PCA algorithm
+    - Random Cut Forest algorithm
+    - Sequence-to-sequence algorithm
+    - XGBoost algorithm
+
+1. BlazingText
+
+- Type: Word2vec / Text classification (behind Amazon Comprehend)
+
+- Use cases:
+    - NLP
+    - Sentiment analysis
+    - Named Entity Recognition
+    - Machine translation
+
+ 2. Image Classification Algorithm
+
+ - Type: CNN (behind Amazon Rekognition)
+ - Use Cases
+     - Image Recognition
+3. K-means
+
+- Type : K-means, Based off web-scale k-means clustering algorithm
+- Use cases:
+    - Find discrete groupings within data
+
+3. LDA
+- Type: LDA algorithm (behind Amazon Comprehend)
+- Use cases
+    - Text analysis
+    - Topic discovery
+
+4. PCA
+
+- Type: PCA
+- Use cases
+    - Reduce the dimensionality i.e. number of features
+
+5. XGBoost
+- Type: eXtreme Gradient Boosting, Gradient boosted trees algorithm
+- Use cases:
+    - Making predictions from tabular data
+
+![Read AWS official documentation of SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html)
 
 ### 3. Train
 
+Architecture of SageMaker built-in algorithms.
+
+Amazon ECS (Elastic Container Service): It has a docker image in it.
+
+```
+____________    __________    _____________
+| S3       |    | EC2    |    | ECS       |
+| Training |    |  ML    |    | Docker    |
+|  data    |    |        |    | Containers|
+|__________|    |________|    |___________|
+
+```
+
+- ML Docker Container:
+    - SageMAker Built-in algorithms
+    - AWS deep learning containers
+    - AWS Marketplace (the algorithms in marketplace are available as docker images)
+    - Custom (build your own)
+
+Where we get data from ??
+
+S3, EFS, Amazon FSx for Lustre --> Parameter: Channel (eg. train, validation, train_lst, validation_lst, model)
+
+When you create a training job in Amazon Sagemaker, it will manage the infrastructure but you still have to tell it what to use.
+
+EC2 instances
+- Amazon recommend:
+    - m4 family, c4 family and p2 family (they have GPU and used for image classification)
+- Some algorithms only support GPUs
+- GPU instances are more expensive but faster
+
+Managed Spot Training
+- MAnaged spot training can optimize the cost of training models up top 90% over on-demand instances
+- Checkpoints (snapshot of model state in S3)
+
+Hyperparameter:
+
+1. Choose an algorithm
+
+2. Set ranges of hyperparameter like set of Epochs
+
+3. Choose the metric to measure
+
+Amazon SageMAker automatic Model Tuning
+- works with:
+    - AWS built-in algorithms
+    - custom algorithms
+    - SageMaker pre-built containers
+
+- Limits
+    - There are limits
+    - Be mindful of EC2 resource limits
+
 ### 4. Deploy
 
+#### 4.1 Inference pipelines
+
+Inference data -> Model1 -> Model2 -> Model3 -> Inference or prediction
+
+```
+    Lambda
+      \|/
+SageMaker Endpoint
+      \|/
+S3 -> Model -> ECR
+
+
+Batch Inference
+
+S3 -> Batch Transform Job -> S3
+        \|/
+S3 -> SageMaker -> ECR
+
+```
+
+Steps in creating inference in model:
+
+1. Define Model
+2. Create Endpoint configurations
+3. Create Endpoints
+4. Batch transform jobs
+
+#### 4.2 Accessing Inference from Apps
+
+```
+App -> AWS api/sdk -> SageMaker Endpoint
+     (API Gateway->Lambda)
+
+```
 ### 5. Security
+
+- Notebook root access
+- SageMaker instance profiles
+- SageMaker does not support resource-based policies. For example policy to S3. It attaches roles to S3 bucket to access SageMaker.
+
+VPC security controls
+- SageMaker hosts models in a public VPC by default.
+    - Create a private VPC
+- Models and data stored in S3 (public internet)
+    - Create an Amazon S3 VPC endpoint
+    - Use a custom endpoint policy for S3
+    - Encrypt the data within S3
 
 ## Other AWS Services
