@@ -73,13 +73,3 @@ I would highly recommend giving below Practice papers in Udemy academy:
 3. Modeling                                         36%
 
 4. Machine learning Implementation and Operations   20%
-
-# Exam preparation notes
-
-
-# Learning rerefences:
-
-1. AWS official site
-2. LinuxAcademy
-3. Udemy
-4. WhizLabs
