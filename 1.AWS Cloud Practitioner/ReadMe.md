@@ -6,13 +6,13 @@ AWS Certified Cloud Practitioner exam is foundational level certification. It is
 
 AWS Certified Cloud Practitioner Exam is the easiest exam to pass for anyone with no prior cloud experience. I would highly recommend anyone who are on the journey of AWS certification to start with this basic certification and it also helps in boosting the confidence. I wish everyone all the best !!
 
-# My experience in passing AWS Certified Cloud Practitioner
+# My experience in passing AWS Certified Cloud Practitioner 2020
 
 Time length to prepare for the exam: 3 Weeks
 
 AWS Experience I have: Less than 6 months
 
-AWS Exam details: Passed AWS Certified Cloud Practitioner 2020
+AWS Exam result (Pass/Fail): PASS
 
 Exam Experience: Exam topics covered in cloud practitioner exam:
 

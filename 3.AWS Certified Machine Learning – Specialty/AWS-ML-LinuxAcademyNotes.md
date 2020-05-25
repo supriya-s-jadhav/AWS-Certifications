@@ -358,27 +358,7 @@ Actual Values
 | Model | Like Dog | True Positive </br> Actual and predicted Like dogs | False Positive </br> Actual: does not like dog and Predicted: Like dogs |
 | Prediction | Don't like dog | False Negatives </br> Actual: Likes dogs and Predicted: Does not like dogs | True Negatives </br> Actual and Predicted: Does not like dogs |
 
-#### 5.2 Sensitivity and Specificity
-
-Sensitivity or Recall or TPR
-
-The number of correct positives out of the actual positive results
-
-Sensitivity = TP / TP + FN
-
-Closer he sensitive value of a model to 1, the less False Negatives are.
-
-Example: In Fraud detection, we want as close Sensitivity to 1 as possible
-
-Specificity or TNR
-
-The number of correct negatives out of the actual negative results.
-
-Specificity = TN / TN + FP
-
-Example: In classifying appropriate video content for kids, we want specificity value as close to 1 as possible.
-
-#### 5.3 Accuracy and Precision
+#### 5.2 Accuracy and Precision
 
 Accuracy:
 
@@ -390,7 +370,58 @@ Precision: Proportion of actual positives we identified.
 
 Precision = TP / TP + FP
 
+Overall accuracy can sometimes be a deceptive measure because of unbalanced classes.
+
+A general improvement to using overall accuracy is to study sensitivity and specificity separately. Sensitivity, also known as the true positive rate or recall, is the proportion of actual positive outcomes correctly identified as such. Specificity, also known as the true negative rate, is the proportion of actual negative outcomes that are correctly identified as such.
+
+#### 5.3 Sensitivity and Specificity
+
+A general improvement to using overall accuracy is to study sensitivity and specificity.
+
+Positive outcome means y is 1, and
+negative outcome means when y is 0.
+
+<b>Sensitivity or Recall or TPR </b>
+
+The number of correct positives out of the actual positive results. High sensitivity means y equals 1 implies y_hat equals 1.
+
+Sensitivity = TP / TP + FN
+
+Closer he sensitive value of a model to 1, the less False Negatives are.
+
+Example:
+
+a) In Fraud detection, we want as close Sensitivity to 1 as possible.
+
+b) In case of plane safety, sensitivity close to 1 is important. If plan is not safe and we predicted plane is safe, is much more costly error than predicting a safe plan as malfunctioned and having it grounded.
+
+
+<b>Specificity or TNR</b>
+
+The number of correct negatives out of the actual negative results. High specificity means y equals 0 implies y_hat equals 0.
+
+Specificity = TN / TN + FP
+
+Example:
+
+a) In classifying appropriate video content for kids, we want specificity value as close to 1 as possible.
+
+b) In a capital murder criminal case, we want specificity close to 1. If we predict an innocent person as criminal and we can end up killing an innocent person.
+
+<b>Precision or Positive Predictive value </b>
+
+PREcision is to PREgnancy tests as reCALL is to CALL center.
+
+
+This tells when you predict something positive, how many times they were actually positive. whereas,
+
+Precision = TP / TP + FP
+
+Having said above, in case of spam email detection, One should be okay if a spam email (positive case) left undetected and doesn't go to spam folder but, if an email is good (negative), then it must not go to spam folder. i.e. Precison is more important. (If model predicts something positive (i.e. spam), it better be spam. else, you may miss important emails).
+
 #### 5.4 ROC/AUC
+
+A very common approach to evaluating accuracy and F1-score is to compare them graphically by plotting both. A widely used plot that does this is the receiver operating characteristic (ROC) curve. The ROC curve plots sensitivity (TPR) versus 1 - specificity or the false positive rate (FPR).
 
 #### 5.5 Gini Impurity
 
