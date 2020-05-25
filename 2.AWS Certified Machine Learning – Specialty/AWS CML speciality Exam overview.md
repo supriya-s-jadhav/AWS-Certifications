@@ -8,7 +8,7 @@ Exam Time: 170 min
 
 Number of Questions: 65
 
-Minimum Passing Score: 700/1000
+Minimum Passing Score: 750/1000
 
 Cost: $300
 
