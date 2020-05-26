@@ -60,8 +60,7 @@ Glancing over AWS services under: Machine Learning, IoT (IoT core, IoT analytics
 I would highly recommend giving below Practice papers in Udemy academy:
 
 [1. Udemy: AWS Certified Machine Learning—Specialty 2020 : Full Practice Exam](https://www.udemy.com/course/aws-certified-machine-learning-specialty-full-practice-exams/)
-[2. Udemy: AWS Certified Machine Learning Specialty: Full Practice Exam](https://www.udemy.com/course/aws-machine-learning-practice-exam/)
-[3. WhizLabs: AWS Certified Machine Learning Specialty Practice Tests](https://www.whizlabs.com/aws-certified-machine-learning-specialty/)
+[2. WhizLabs: AWS Certified Machine Learning Specialty Practice Tests](https://www.whizlabs.com/aws-certified-machine-learning-specialty/)
 
 
 ## Exam Topics :
