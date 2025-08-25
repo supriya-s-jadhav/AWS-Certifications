@@ -5,6 +5,9 @@ Version: 1.0
 
 Date: April 2020
 
+© 2025 Supriya Sampat JAdhav. All rights reserved.
+Unauthorized copying, use, or redistribution of this code is prohibited.
+
 ```
 
 # AWS-Certifications
